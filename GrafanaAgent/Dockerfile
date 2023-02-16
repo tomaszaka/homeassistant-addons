@@ -1,4 +1,5 @@
-ARG BUILD_FROM GRAFANA_FROM
+ARG BUILD_FROM
+ARG GRAFANA_FROM
 FROM ${BUILD_FROM}
 
 ADD  https://github.com/grafana/agent/releases/download/v0.31.3/${GRAFANA_FROM} /tmp/
