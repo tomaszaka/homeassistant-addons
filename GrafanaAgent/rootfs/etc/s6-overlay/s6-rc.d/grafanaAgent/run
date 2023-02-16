@@ -1,0 +1,28 @@
+#!/usr/bin/with-contenv bashio
+# shellcheck shell=bash
+
+cat > /etc/grafana-agent.yaml << EOF
+server:
+  log_level: $(bashio::config 'log_level')
+metrics:
+  wal_directory: /tmp/wal
+  configs:
+    - name: integrations
+      scrape_configs:
+        - job_name: integrations/hass
+          scrape_interval: $(bashio::config 'scrape_int')
+          metrics_path: /api/prometheus
+          bearer_token: $(bashio::config 'bearer')
+          scheme: https
+          static_configs:
+            - targets: ['$(bashio::config "target")']
+      remote_write:
+        - url: $(bashio::config 'url')
+          basic_auth:
+            username: $(bashio::config 'username')
+            password: $(bashio::config 'password')
+EOF
+
+set -x
+
+exec /bin/grafana-agent --config.file=/etc/grafana-agent.yaml --metrics.wal-directory=/tmp/wal

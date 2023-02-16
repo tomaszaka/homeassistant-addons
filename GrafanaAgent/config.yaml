@@ -1,0 +1,28 @@
+name: "Grafana Agent"
+description: "Grafana Agent for sending metrics to Grafana Cloud"
+version: "1.0.0"
+slug: "grafana_agent"
+url: https://github.com/tomaszaka/homeassistant-addons
+init: false
+arch:
+  - aarch64
+  - amd64
+  - armhf
+  - armv7
+  - i386
+options:
+  bearer: "Long-lived Home Assistant token"
+  target: "FQDN:port for HA instance"
+  url: "URL of remote_write"
+  username: ""
+  password: ""
+  scrape_int: "1m"
+  log_level: "debug"
+schema:
+  bearer: str
+  target: str
+  url: str
+  username: str
+  password: str
+  scrape_int: str
+  log_level: str

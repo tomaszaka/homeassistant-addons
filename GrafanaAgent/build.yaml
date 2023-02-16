@@ -1,0 +1,6 @@
+build_from:
+  aarch64: grafana/agent
+  amd64: grafana/agent
+  armhf: grafana/agent
+  armv7: grafana/agent
+  i386: grafana/agent
