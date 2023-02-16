@@ -1,5 +1,5 @@
-![Version](https://img.shields.io/badge/dynamic/json?label=Version&query=%24.version&url=https%3A%2F%2Fraw.githubusercontent.com%2tomaszaka%2Fhomeassistant-addons%2Fmaster%2Fgrafanaagent%2Fconfig.json)
-![arch](https://img.shields.io/badge/dynamic/json?color=success&label=Arch&query=%24.arch&url=https%3A%2F%2Fraw.githubusercontent.com%2Ftomaszaka%2Fhomeassistant-addons%2Fmaster%2Fgrafanaagent%2Fconfig.json)
+![Version](https://img.shields.io/badge/dynamic/json?label=Version&query=%24.version&url=https%3A%2F%2Fraw.githubusercontent.com%2tomaszaka%2Fhomeassistant-addons%2Fmaster%2FGrafanAagent%2Fconfig.json)
+![arch](https://img.shields.io/badge/dynamic/json?color=success&label=Arch&query=%24.arch&url=https%3A%2F%2Fraw.githubusercontent.com%2Ftomaszaka%2Fhomeassistant-addons%2Fmaster%2FGrafanaAgent%2Fconfig.json)
 ## About
 
 ---
