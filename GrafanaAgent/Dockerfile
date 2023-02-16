@@ -1,7 +1,7 @@
 ARG BUILD_FROM
-ARG BUILD_ARCH
 FROM ${BUILD_FROM}
 
+ARG BUILD_ARCH
 ADD  https://github.com/grafana/agent/releases/download/v0.31.3/grafana-agent-0.31.3-1.${BUILD_ARCH}.deb /tmp/
 ADD rootfs /
 RUN dpkg -i /tmp/${GRAFANA_FROM} \
