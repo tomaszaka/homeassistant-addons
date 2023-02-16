@@ -1,5 +1,5 @@
 ARG BUILD_FROM
-FROM ghcr.io/hassio-addons/ubuntu-base/amd64:8.2.1
+FROM ${BUILD_FROM}
 
 ADD  https://github.com/grafana/agent/releases/download/v0.31.3/grafana-agent-0.31.3-1.amd64.deb /tmp/
 ADD rootfs /
