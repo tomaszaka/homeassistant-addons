@@ -1,5 +1,5 @@
-![Version](https://img.shields.io/badge/dynamic/json?label=Version&query=%24.version&url=https://raw.githubusercontent.com/tomaszaka/homeassistant-addons/main/GrafanaAgent/config.yaml)
-![arch](https://img.shields.io/badge/dynamic/json?color=success&label=Arch&query=%24.arch&url=https://raw.githubusercontent.com/tomaszaka/homeassistant-addons/main/GrafanaAgent/config.yaml)
+![Version](https://img.shields.io/badge/dynamic/yaml?label=Version&query=%24.version&url=https://raw.githubusercontent.com/tomaszaka/homeassistant-addons/main/GrafanaAgent/config.yaml)
+![arch](https://img.shields.io/badge/dynamic/yaml?color=success&label=Arch&query=%24.arch&url=https://raw.githubusercontent.com/tomaszaka/homeassistant-addons/main/GrafanaAgent/config.yaml)
 ## About
 
 ---
